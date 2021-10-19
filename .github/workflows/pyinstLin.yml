@@ -22,4 +22,4 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: ecm_linux
-        path: dist/portable_ecm_gui
+        path: ./dist/portable_ecm_gui
