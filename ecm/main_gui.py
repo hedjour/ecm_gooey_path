@@ -8,7 +8,7 @@ import argparse
 from os import path as ptah
 import yaml
 from gooey import Gooey, GooeyParser
-from importlib import resources
+
 BOOM = r"""
      _.-^^---....,,--
  _--                  --_
@@ -30,7 +30,7 @@ You missed to give me your data
 #     data = ptah.dirname(ptah.realpath(__file__))
 # except TypeError :
 #     data = resources('med_to_csv')
-data = resources('med_to_csv.img')
+data = ptah.dirname(ptah.realpath(__file__))
 
 @Gooey( program_name= "med_to_csv",
         image_dir=f'{data}/img/',
