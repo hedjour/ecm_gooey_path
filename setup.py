@@ -1,3 +1,4 @@
+"""Setup tools script for install"""
 try:
     from setuptools import setup, find_packages
 except ImportError:
