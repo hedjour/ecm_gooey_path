@@ -1,4 +1,6 @@
-"""Setup tools script for install"""
+#! /usr/bin/python3
+# -*- coding: utf-8 -*-
+# """Setup tools script for install"""
 try:
     from setuptools import setup, find_packages
 except ImportError:
