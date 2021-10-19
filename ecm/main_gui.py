@@ -26,10 +26,6 @@ Oops your data have disappeared
     OH good news 
 You missed to give me your data
 """
-# try :
-#     data = ptah.dirname(ptah.realpath(__file__))
-# except TypeError :
-#     data = resources('med_to_csv')
 data = ptah.dirname(ptah.realpath(__file__))
 
 @Gooey( program_name= "med_to_csv",
