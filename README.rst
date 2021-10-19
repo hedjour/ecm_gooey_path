@@ -6,10 +6,8 @@
 .. _top:
 ECM to find a good way for img_dir Path in Gooey
 ==========================
-
-A simple way to parse MedAssociate output file in tidy data :
-   * 1 row = 1 observation
-   * 1 col = 1 var
+This code is just an ECM to find a good way to indicate a path of image in image_dir variable.
+We looking for a method applicable with booth Setuptools and pyInstaller modules.
    
 
 `Explore the docs » <https://github.com/hedjour/ecm_gooey_path>`_
