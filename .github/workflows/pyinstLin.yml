@@ -31,7 +31,7 @@ jobs:
     #     path: .
     #     spec: build_gui.spec
 
-    # - uses: actions/upload-artifact@v2
-    #   with:
-    #     name: ecm_linux
-    #     path: ./dist/linux
+    - uses: actions/upload-artifact@v2
+      with:
+        name: ecm_linux
+        path: ./dist/linux
