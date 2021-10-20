@@ -5,9 +5,9 @@ on:
     inputs:
       tags:
         description: 'test build tags'
+
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
