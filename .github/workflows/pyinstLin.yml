@@ -21,8 +21,7 @@ jobs:
           libwxgtk3.0-gtk3-0v5 python3-wxgtk-media4.0 python3-wxgtk-webview4.0 python3-wxgtk4.0
 
     - name: Install Gooey
-      run: |
-          pip install gooey
+      run: pip install gooey
 
     - name: Package Application
       uses: JackMcKew/pyinstaller-action-linux@main
