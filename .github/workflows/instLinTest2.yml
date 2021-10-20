@@ -17,7 +17,7 @@ jobs:
       run: |
           sudo apt update
           sudo apt upgrade -y
-          sudo apt install python3-wxgtk4.0 python3-wxgtk-webview4.0 
+          sudo apt install python3-wxgtk4.0 python3-wxgtk-webview4.0
           sudo pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-16.04 wxPython​
 
     - name: Install Gooey
