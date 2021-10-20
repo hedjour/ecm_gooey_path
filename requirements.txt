@@ -19,4 +19,5 @@ psutil>=5.7.0
 pyinstaller @ https://github.com/pyinstaller/pyinstaller/archive/develop.zip
 pywin32-ctypes>=0.2.0
 six>=1.15.0
+pathlib2
 wxPython>=4.0.7
