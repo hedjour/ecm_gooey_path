@@ -1,0 +1,24 @@
+name: Second test Build GUI bin with Pyinstaller
+
+on:
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: 'test build tags'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Install dependencies
+      run: |
+          sudo apt update
+          sudo apt upgrade -y
+          sudo apt-get install python3-wxgtk4.0 python3-wxgtk-webview4.0 python3-wxgtk-media4.0​
+          sudo pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk3/ubuntu-16.04 wxPython​
+
+    - name: Install Gooey
+      run: pip install gooey
