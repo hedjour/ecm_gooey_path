@@ -19,14 +19,19 @@ jobs:
           sudo apt upgrade -y
           sudo apt install -y libwxbase3.0-0v5 libwxgtk-media3.0-gtk3-0v5 libwxgtk-webview3.0-gtk3-0v5 \
           libwxgtk3.0-gtk3-0v5 python3-wxgtk-media4.0 python3-wxgtk-webview4.0 python3-wxgtk4.0
-          pip install -U -f https://extras.wxpython.org/wxPython4/extras/linux/gtk2/ubuntu-18.04 wxPython
-    - name: Package Application
-      uses: JackMcKew/pyinstaller-action-linux@main
-      with:
-        path: .
-        spec: build_gui.spec
 
-    - uses: actions/upload-artifact@v2
-      with:
-        name: ecm_linux
-        path: ./dist/linux
+    - name: Install Gooey
+      run: |
+        pip install gooey
+
+
+    # - name: Package Application
+    #   uses: JackMcKew/pyinstaller-action-linux@main
+    #   with:
+    #     path: .
+    #     spec: build_gui.spec
+
+    # - uses: actions/upload-artifact@v2
+    #   with:
+    #     name: ecm_linux
+    #     path: ./dist/linux

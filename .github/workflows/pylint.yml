@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       tags:
-        description: 'test pylint' 
+        description: 'test build tags || pylint'
+  # [push]
 
 jobs:
   build:
