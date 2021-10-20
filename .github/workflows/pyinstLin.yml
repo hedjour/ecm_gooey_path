@@ -22,7 +22,7 @@ jobs:
 
     - name: Install Gooey
       run: |
-        pip install gooey
+          pip install gooey
 
 
 #    # - name: Package Application
