@@ -24,7 +24,6 @@ jobs:
       run: |
           pip install gooey
 
-
     - name: Package Application
       uses: JackMcKew/pyinstaller-action-linux@main
       with:
