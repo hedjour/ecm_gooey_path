@@ -24,13 +24,6 @@ jobs:
       run: |
           pip install gooey
 
-
-    - name: Package Application
-      uses: JackMcKew/pyinstaller-action-linux@main
-      with:
-        path: .
-        spec: build_gui.spec
-
     - uses: actions/upload-artifact@v2
       with:
         name: ecm_linux
