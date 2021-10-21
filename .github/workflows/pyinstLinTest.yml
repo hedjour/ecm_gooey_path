@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       tags:
+        required: False
         description: 'test build tags'
 
 jobs:
