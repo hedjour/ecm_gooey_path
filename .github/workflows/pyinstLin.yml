@@ -1,4 +1,4 @@
-name: Build GUI bin with Pyinstaller
+name: Build GUI Gnu-Linux
 
 on:
   workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
       run: pip install gooey
 
     - name: Package Application
-      uses: JackMcKew/pyinstaller-action-linux@main
+      uses: hedjour/pyinstaller-action-linux@main
       with:
         path: .
         spec: build_gui.spec
