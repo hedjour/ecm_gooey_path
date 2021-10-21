@@ -14,6 +14,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Update systems
+      run: |
+          sudo apt update
+          sudo apt upgrade -y
+
     - name: Package Application
       uses: hedjour/pyinstaller-action-linux@main
       with:
