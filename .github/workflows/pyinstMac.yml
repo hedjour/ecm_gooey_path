@@ -16,8 +16,8 @@ jobs:
 
     - name: Install Gooey
       run: |
-          pip install gooey
-          pip install Pyinstaller
+          pip3 install gooey
+          pip3 install Pyinstaller
     
     - name: Install user dependencies
       run: |
